@@ -1,0 +1,293 @@
+{
+  "extension_name": {
+    "message": "Summarizer"
+  },
+  "extension_description": {
+    "message": "An AI Web Page Summarization Extension"
+  },
+  "extension_action_title": {
+    "message": "Generate Summarization"
+  },
+  "common_action_reset": {
+    "message": "Reset"
+  },
+  "common_action_save": {
+    "message": "Save"
+  },
+  "common_action_cancel": {
+    "message": "Cancel"
+  },
+  "common_action_confirm": {
+    "message": "Confirm"
+  },
+  "common_action_add": {
+    "message": "Add"
+  },
+  "common_action_import": {
+    "message": "Import"
+  },
+  "common_action_export": {
+    "message": "Export"
+  },
+  "common_action_edit": {
+    "message": "Edit"
+  },
+  "common_action_delete": {
+    "message": "Delete"
+  },
+  "common_default_prompt": {
+    "message": "Please read what I send you and return a concise, short and well-organized summary of the content. No matter what I send you, please answer in English."
+  },
+  "common_components_codemirror_description": {
+    "message": "Code Editing Area"
+  },
+  "common_components_pagination_description": {
+    "message": "Page Switching Area"
+  },
+  "common_components_pagination_prev_description": {
+    "message": "Previous Page"
+  },
+  "common_components_pagination_next_description": {
+    "message": "Next Page"
+  },
+  "common_components_pagination_input_description": {
+    "message": "Enter the page number you wish to jump to here"
+  },
+  "common_components_remove_dialog_default_header": {
+    "message": "Confirm Deletion"
+  },
+  "common_components_skeleton_description": {
+    "message": "This is a loading skeleton"
+  },
+  "notification_error_api_key_missing": {
+    "message": "Please add your API Key first"
+  },
+  "error_empty": {
+    "message": "Cannot be empty"
+  },
+  "error_illegal_format": {
+    "message": "Does not match URL format"
+  },
+  "error_duplicate": {
+    "message": "Duplicates existing data"
+  },
+  "error_too_short": {
+    "message": "Is too short"
+  },
+  "error_summary_in_forbidden_url": {
+    "message": "Summary cannot be triggered on the current tab's URL"
+  },
+  "error_summary_unfinished_chatting": {
+    "message": "There is an unfinished chat"
+  },
+  "error_empty_webpage_content": {
+    "message": "Empty webpage content"
+  },
+  "error_unknown_error": {
+    "message": "Unknown Error"
+  },
+  "error_stop_with_finish_reason": {
+    "message": "Chat stopped due to $1"
+  },
+  "sidepanel_nav_setting_switch_description": {
+    "message": "A button to open or close the panel, which includes buttons to navigate to the options page, disable summaries in the current tab url, and change the theme color"
+  },
+  "sidepanel_nav_suspend_title": {
+    "message": "Suspend the ongoing summary"
+  },
+  "sidepanel_nav_open_options_title": {
+    "message": "Go to the options page"
+  },
+  "sidepanel_nav_forbidden_url_title": {
+    "message": "Disable summaries on the current page URL"
+  },
+  "sidepanel_nav_forbidden_url_confirm_header": {
+    "message": "Confirm Disable"
+  },
+  "sidepanel_nav_forbidden_url_confirm_detail": {
+    "message": "Do you confirm that you want to disable summaries on the current URL $1?"
+  },
+  "sidepanel_nav_forbidden_url_confirm_error": {
+    "message": "The current tab URL is empty"
+  },
+  "sidepanel_nav_update_theme_title": {
+    "message": "Switch Theme Color"
+  },
+  "sidepanel_nav_update_theme_panel_description": {
+    "message": "Click to switch the theme color on the color panel"
+  },
+  "sidepanel_welcome_header": {
+    "message": "Welcome to Summarizer"
+  },
+  "sidepanel_welcome_info": {
+    "message": "After the tab has finished loading, click the icon to start "
+  },
+  "sidepanel_welcome_action": {
+    "message": "Summarize"
+  },
+  "sidepanel_welcome_logo_title": {
+    "message": "Click to start summarizing the webpage content"
+  },
+  "sidepanel_welcome_logo_description": {
+    "message": "Summarizer icon, its color will change with the theme color"
+  },
+  "sidepanel_chat_user_content_description": {
+    "message": "User content"
+  },
+  "sidepanel_chat_summary_description": {
+    "message": "This chat is a summary of the webpage content"
+  },
+  "sidepanel_chat_summary_icon_description": {
+    "message": "Summary icon"
+  },
+  "sidepanel_chat_summary_title": {
+    "message": "Summary"
+  },
+  "sidepanel_chat_action_description": {
+    "message": "Action area for the current conversation"
+  },
+  "sidepanel_chat_action_regenerate_title": {
+    "message": "Regenerate summary"
+  },
+  "sidepanel_chat_action_copy_title": {
+    "message": "Copy summary"
+  },
+  "sidepanel_chat_action_speaking_title": {
+    "message": "Read aloud summary"
+  },
+  "sidepanel_chat_action_stop_speaking_title": {
+    "message": "Stop reading aloud"
+  },
+  "sidepanel_chat_action_download_title": {
+    "message": "download summary"
+  },
+  "sidepanel_chat_action_download_menu_title": {
+    "message": "Download summary menu, includes exporting as txt, markdown, png filetype"
+  },
+  "sidepanel_chat_action_download_menu_type_title": {
+    "message": "Download summary as $1 filetype"
+  },
+  "options_import_error_incorrect_format": {
+    "message": "JSON data format error"
+  },
+  "options_import_error_read_failed": {
+    "message": "Read data failed"
+  },
+  "options_import_info_finished": {
+    "message": "Imported $1, $2 did not meet the requirements"
+  },
+  "options_form_response_type_header": {
+    "message": "Enable Streaming Response"
+  },
+  "options_form_response_type_tips_stream": {
+    "message": "Stream format to get AI responses in parts (faster response)"
+  },
+  "options_form_response_type_tips_json": {
+    "message": "JSON format to get the entire AI response at once"
+  },
+  "options_form_response_type_description": {
+    "message": "Click to switch the AI response type"
+  },
+  "options_form_summary_prompt_header": {
+    "message": "AI Summary Prompt"
+  },
+  "options_form_summary_prompt_tips": {
+    "message": "Good summaries come from good prompts"
+  },
+  "options_form_summary_prompt_description": {
+    "message": "Click to open the AI summary prompt detail dialog and edit"
+  },
+  "options_form_filter_header": {
+    "message": "Sensitive Information Filter"
+  },
+  "options_form_filter_tips": {
+    "message": "Can replace information in the webpage that you do not want the AI to know"
+  },
+  "options_form_filter_description": {
+    "message": "Click to open the sensitive information detail drawer and edit"
+  },
+  "options_form_forbidden_url_header": {
+    "message": "Forbidden URL"
+  },
+  "options_form_forbidden_url_tips": {
+    "message": "Write down the URLs where you do not want to use this plugin to avoid accidental triggering"
+  },
+  "options_form_forbidden_url_description": {
+    "message": "Click to open the disabled URLs detail drawer adn edit"
+  },
+  "options_form_gemini_api_key_header": {
+    "message": "Gemini API Key"
+  },
+  "options_form_gemini_api_key_tips": {
+    "message": "The Gemini API Key is used for interface authentication."
+  },
+  "options_form_gemini_api_key_description": {
+    "message": "Click to open the Gemini API Key detail box and edit"
+  },
+  "options_form_advanced_rule_header": {
+    "message": "Advanced Content Rules"
+  },
+  "options_form_advanced_rule_tips": {
+    "message": "Special URLs require specific web content retrieval functions"
+  },
+  "options_form_advanced_rule_description": {
+    "message": "Click to open the web content detail drawer and edit"
+  },
+  "options_form_theme_description": {
+    "message": "Click to display the color panel and change the theme's base color"
+  },
+  "options_table_header_action": {
+    "message": "Action"
+  },
+  "options_table_empty": {
+    "message": "Empty Data"
+  },
+  "options_form_header_description": {
+    "message": "Settings content list"
+  },
+  "options_form_header_icon_description": {
+    "message": "Settings Icon, used as the header"
+  },
+  "options_forbidden_url_tips": {
+    "message": "Starting with R: to be treated as a regex"
+  },
+  "options_filter_sensitive_label": {
+    "message": "Sensitive Information"
+  },
+  "options_filter_sensitive_tips": {
+    "message": "Information that needs to be replaced"
+  },
+  "options_filter_replacement_label": {
+    "message": "Replacement"
+  },
+  "options_filter_replacement_tips": {
+    "message": "If empty it will be replaced with * symbols"
+  },
+  "options_advanced_rule_url_tips": {
+    "message": "Please fill in the URL where the function applies, starting with R: is considered a regex"
+  },
+  "options_advanced_rule_js_title": {
+    "message": "Please fill in your function to get webpage content below, for function examples and requirements, go to"
+  },
+  "options_advanced_rule_js_action": {
+    "message": "Advanced Settings"
+  },
+  "options_advanced_rule_js_action_description": {
+    "message": "Jump to external link to learn about function writing rules"
+  },
+  "options_forbidden_url_remove_detail": {
+    "message": "Do you want to delete the URL $1 ?"
+  },
+  "options_filter_remove_detail": {
+    "message": "Do you want to delete the replacement of $1?"
+  },
+  "options_advanced_rule_remove_detail": {
+    "message": "Do you want to delete the content acquisition rule for $1?"
+  },
+  "options_col_url": {
+    "message": "URL"
+  },
+  "options_col_javascript": {
+    "message": "JS"
+  }
+}

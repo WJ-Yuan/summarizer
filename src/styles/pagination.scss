@@ -1,0 +1,32 @@
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1rem;
+  margin-top: 1rem;
+
+  .ml-8 {
+    margin-left: 8px;
+  }
+
+  .mr-8 {
+    margin-right: 8px;
+  }
+
+  .input {
+    --md-filled-field-top-space: 8px;
+    --md-filled-field-bottom-space: 8px;
+    --md-filled-field-trailing-space: 8px;
+    --md-filled-field-leading-space: 8px;
+    @extend .ml-8;
+  }
+
+  .splitter {
+    @extend .ml-8;
+    @extend .mr-8;
+  }
+
+  .total {
+    @extend .mr-8;
+  }
+}

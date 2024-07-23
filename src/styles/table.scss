@@ -1,0 +1,101 @@
+.table {
+  position: relative;
+  width: 100%;
+  --catalog-shape-xl: 28px;
+
+  .table-header-action {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 16px;
+    --md-outlined-button-container-height: 32px;
+    --md-filled-button-container-height: 32px;
+    --md-filled-tonal-button-container-height: 32px;
+
+    .import {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 1px;
+    }
+  }
+
+  .table-data {
+    width: 100%;
+    border-spacing: 0;
+    table-layout: fixed;
+
+    td,
+    th {
+      border-block-start: 1px solid var(--md-sys-color-outline-variant);
+      border-inline-start: 1px solid var(--md-sys-color-outline-variant);
+      padding: 8px 16px;
+    }
+
+    tr {
+      &:last-of-type {
+        td,
+        th {
+          border-block-end: 1px solid var(--md-sys-color-outline-variant);
+        }
+
+        td {
+          &:first-of-type {
+            border-end-start-radius: var(--catalog-shape-xl);
+          }
+
+          &:last-of-type {
+            border-end-end-radius: var(--catalog-shape-xl);
+          }
+        }
+      }
+
+      td:last-of-type,
+      th:last-of-type {
+        border-inline-end: 1px solid var(--md-sys-color-outline-variant);
+      }
+
+      th {
+        &:first-of-type {
+          border-start-start-radius: var(--catalog-shape-xl);
+        }
+
+        &:last-of-type {
+          border-start-end-radius: var(--catalog-shape-xl);
+        }
+      }
+    }
+
+    th {
+      background-color: var(--md-sys-color-surface-container);
+      text-shadow: 0 1px 1px var(--md-sys-color-surface-container-lowest);
+      color: var(--md-sys-color-on-surface);
+      font-size: 1.25em;
+    }
+
+    td {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    :not(pre) > code {
+      display: inline-flex;
+      background-color: var(--md-sys-color-surface-variant);
+      text-shadow: 0 1px 1px var(--md-sys-color-surface-variant);
+      color: var(--md-sys-color-on-surface);
+      padding: 4px;
+      border-radius: 8px;
+    }
+  }
+}
+
+.empty {
+  display: flex;
+  width: 100%;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+}

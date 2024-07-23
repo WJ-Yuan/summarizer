@@ -1,0 +1,163 @@
+body {
+  background-color: var(--md-sys-color-background);
+  font-size: var(--md-root-font-size);
+  font-family: var(--md-ref-typeface-plain);
+
+  #app {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+
+    .body {
+      position: relative;
+      width: 100%;
+      max-width: 840px;
+      width: calc(100% - 48px);
+      max-height: calc(100% - 64px);
+      padding: 32px 24px;
+
+      .skeleton {
+        max-width: 450px;
+      }
+    }
+
+    .aside {
+      position: fixed;
+      right: 30px;
+      bottom: 80px;
+      z-index: 0;
+
+      --md-fab-small-container-shape-start-start: 50%;
+      --md-fab-small-container-shape-start-end: 50%;
+      --md-fab-small-container-shape-end-start: 50%;
+      --md-fab-small-container-shape-end-end: 50%;
+
+      @keyframes rotate-in {
+        from {
+          transform: rotate(-360deg);
+        }
+
+        to {
+          transform: rotate(0deg);
+        }
+      }
+
+      @keyframes rotate-out {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes bounce-up {
+        from {
+          height: 40px;
+          opacity: 0;
+          transform: translateY(24px);
+        }
+
+        to {
+          height: 138px;
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes bounce-down {
+        from {
+          height: 162px;
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        to {
+          height: 0;
+          opacity: 0;
+          transform: translateY(24px);
+        }
+      }
+
+      .rotate-in {
+        animation: rotate-in 0.5s linear forwards;
+      }
+
+      .rotate-out {
+        animation: rotate-out 0.3s linear forwards;
+      }
+
+      .bounce-up {
+        animation: bounce-up 0.3s linear forwards;
+      }
+
+      .bounce-down {
+        animation: bounce-down 0.3s linear forwards;
+      }
+
+      .action-list {
+        position: relative;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        display: none;
+
+        &.visible {
+          display: block;
+          overflow: hidden;
+          @extend .bounce-up;
+        }
+
+        &.hidden {
+          display: block;
+          @extend .bounce-down;
+
+          .action-item {
+            @extend .rotate-out;
+          }
+        }
+
+        .action-item {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 6px;
+          @extend .rotate-in;
+
+          .color {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1;
+            height: 1;
+            opacity: 0;
+          }
+        }
+      }
+    }
+
+    .ml-18 {
+      margin-left: 18px;
+    }
+
+    .mb-16 {
+      margin-bottom: 16px;
+    }
+
+    .mr-4 {
+      margin-right: 4px;
+    }
+
+    .mr-6 {
+      margin-right: 6px;
+    }
+
+    .mr-12 {
+      margin-right: 12px;
+    }
+  }
+}

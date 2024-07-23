@@ -1,0 +1,23 @@
+.error {
+  .cm-editor {
+    border-color: var(--md-sys-color-error);
+  }
+
+  &.supporting-text {
+    color: var(--md-sys-color-error);
+  }
+}
+
+.supporting-text {
+  color: var(--md-sys-color-on-surface-variant);
+  display: flex;
+  font-family: var(--md-ref-typeface-plain);
+  font-size: var(--md-sys-typescale-body-small-size);
+  line-height: var(--md-sys-typescale-body-small-ine-height);
+  font-weight: var(--md-sys-typescale-body-small-weight);
+  gap: 16px;
+  justify-content: space-between;
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+  padding-top: 4px;
+}

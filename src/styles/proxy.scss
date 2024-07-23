@@ -1,0 +1,45 @@
+:root {
+  --mdui-shape-corner-extra-small: var(--md-sys-shape-corner-extra-small);
+  --z-index: 2400;
+  --shape-corner: var(--mdui-shape-corner-extra-small);
+  --mdui-elevation-level3: 0 1.25px 5px 0 rgba(0 0 0, 19%),
+    0 0.3333px 1.5px 0 rgba(0 0 0, 3.9%);
+  --mdui-color-inverse-surface: 43 49 51;
+  --mdui-color-inverse-on-surface: 236 242 243;
+  --mdui-typescale-body-medium-size: var(--md-sys-typescale-body-medium-size);
+  --mdui-typescale-body-medium-weight: var(
+    --md-sys-typescale-body-medium-weight
+  );
+  --mdui-typescale-body-medium-tracking: var(
+    --md-sys-typescale-body-medium-tracking
+  );
+  --mdui-typescale-body-medium-line-height: var(
+    --md-sys-typescale-body-medium-line-height
+  );
+}
+
+:root {
+  --mdui-motion-easing-linear: cubic-bezier(0, 0, 1, 1);
+  --mdui-motion-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+  --mdui-motion-easing-standard-accelerate: cubic-bezier(0.3, 0, 1, 1);
+  --mdui-motion-easing-standard-decelerate: cubic-bezier(0, 0, 0, 1);
+  --mdui-motion-easing-emphasized: var(--mdui-motion-easing-standard);
+  --mdui-motion-easing-emphasized-accelerate: cubic-bezier(0.3, 0, 0.8, 0.15);
+  --mdui-motion-easing-emphasized-decelerate: cubic-bezier(0.05, 0.7, 0.1, 1);
+  --mdui-motion-duration-short1: 50ms;
+  --mdui-motion-duration-short2: 100ms;
+  --mdui-motion-duration-short3: 150ms;
+  --mdui-motion-duration-short4: 200ms;
+  --mdui-motion-duration-medium1: 250ms;
+  --mdui-motion-duration-medium2: 300ms;
+  --mdui-motion-duration-medium3: 350ms;
+  --mdui-motion-duration-medium4: 400ms;
+  --mdui-motion-duration-long1: 450ms;
+  --mdui-motion-duration-long2: 500ms;
+  --mdui-motion-duration-long3: 550ms;
+  --mdui-motion-duration-long4: 600ms;
+  --mdui-motion-duration-extra-long1: 700ms;
+  --mdui-motion-duration-extra-long2: 800ms;
+  --mdui-motion-duration-extra-long3: 900ms;
+  --mdui-motion-duration-extra-long4: 1000ms;
+}

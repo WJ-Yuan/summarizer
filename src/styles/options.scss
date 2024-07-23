@@ -1,0 +1,159 @@
+.options {
+  .options-header {
+    text-align: right;
+    --md-icon-size: 72px;
+  }
+
+  .theme {
+    position: fixed;
+    bottom: 30%;
+    right: max(calc((100% - 840px) / 2 + 16px), 40px);
+
+    .color {
+      position: absolute;
+      top: 0;
+      right: 0;
+      opacity: 0;
+    }
+  }
+}
+
+md-dialog {
+  md-outlined-text-field[type="textarea"] {
+    width: min(500px, 70vw);
+    min-width: var(--md-body-width-min);
+    resize: none;
+  }
+
+  md-outlined-text-field[type="text"] {
+    width: min(500px, 70vw);
+    min-width: var(--md-body-width-min);
+  }
+
+  .headline {
+    justify-content: center;
+  }
+}
+
+.drawer::part(panel) {
+  width: 50%;
+  min-width: min(360px, 100%);
+  background-color: var(--md-sys-color-surface-container-low, #f7f2fa);
+}
+
+.drawer {
+  .drawer-header {
+    padding: 24px;
+    line-height: 1.5;
+    font-size: 1.6rem;
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      vertical-align: middle;
+      font-size: var(--md-sys-typescale-title-large-size, 22px);
+      line-height: var(--md-sys-typescale-title-large-line-height, 28px);
+      font-weight: var(--md-sys-typescale-title-large-weight, 400);
+      font-family: var(--md-sys-typescale-title-large-font, "Roboto");
+      color: var(--md-sys-color-on-surface-variant);
+      margin: 0;
+
+      .text {
+        margin-right: 12px;
+        flex: 1;
+      }
+
+      .close-icon {
+        --md-icon-button-icon-size: 24px;
+        --md-icon-button-state-layer-height: var(
+          --md-sys-typescale-title-large-line-height,
+          28px
+        );
+        --md-icon-button-state-layer-width: var(
+          --md-sys-typescale-title-large-line-height,
+          28px
+        );
+      }
+
+      .back-icon {
+        @extend .close-icon;
+        margin-left: -8px;
+      }
+    }
+  }
+
+  .drawer-content {
+    position: relative;
+    height: calc(100% - 76px);
+    padding: 0 24px;
+
+    &.advanced-form {
+      padding: 0;
+      animation: fade-in 0.3s ease-in;
+
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+    }
+
+    .w-100 {
+      width: 100%;
+    }
+
+    .form {
+      position: relative;
+      height: calc(100% - 73px);
+      overflow: auto;
+      padding: 0 24px;
+
+      .form-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        .form-item {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 24px;
+
+          .form-label {
+            color: var(
+              --md-list-item-label-text-color,
+              var(--md-sys-color-on-surface, #1d1b20)
+            );
+            font-family: Roboto;
+            font-size: 16px;
+            line-height: 40px;
+            font-weight: 400;
+            padding-bottom: 12px;
+          }
+
+          .form-control {
+            flex: 1;
+            padding-top: 12px;
+          }
+        }
+      }
+    }
+
+    .divider {
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid var(--md-sys-color-outline);
+    }
+
+    .rule-action {
+      position: absolute;
+      bottom: 0;
+      padding: 16px 024px 24px;
+      --md-outlined-button-container-height: 32px;
+      --md-filled-button-container-height: 32px;
+    }
+  }
+}

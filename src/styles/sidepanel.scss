@@ -1,0 +1,93 @@
+.welcome {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+
+  .logo-button {
+    height: auto;
+    width: auto;
+    margin: 20vh 0 10vh 0;
+    padding: 0;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 16px;
+
+    .logo {
+      cursor: pointer;
+      border-radius: 16px;
+      color: var(--md-sys-color-primary);
+      opacity: 0.9;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .info {
+    .text {
+      color: var(--md-sys-color-primary);
+      opacity: 0.8;
+    }
+  }
+
+  .action {
+    .text {
+      color: var(--md-sys-color-primary);
+      margin-top: 0;
+      margin-bottom: 0;
+
+      .suffix {
+        opacity: 0.6;
+      }
+
+      .button {
+        position: relative;
+        color: var(--md-sys-color-primary);
+        text-decoration: underline;
+        margin-left: 2px;
+        opacity: 0.6;
+
+        &:hover,
+        &:focus {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.chat {
+  .message {
+    .flex {
+      --md-filled-icon-button-container-color: var(--md-sys-color-primary);
+      display: flex;
+      flex: 1;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+    }
+
+    &:first-child .summary {
+      margin-top: 0;
+    }
+
+    .summary {
+      color: var(--md-sys-color-primary);
+      --md-icon-size: 1em;
+      font-size: 1.875em;
+      margin-top: 2.25em;
+      margin-bottom: 1.125em;
+      line-height: 40px;
+      @extend .flex;
+    }
+
+    .action {
+      margin-top: 0.75em;
+      margin-bottom: 1.125em;
+      --md-icon-button-icon-size: 20px;
+      --md-icon-button-state-layer-height: 36px;
+    }
+  }
+}
