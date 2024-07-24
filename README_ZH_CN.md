@@ -6,7 +6,7 @@
 
 ## 简介
 
-一个基于 [Material Design 3](https://m3.material.io/) UI 风格的网页文本内容 AI 总结插件。目前仅支持 Chrome 浏览器（版本 >= 116）和 Google Gemini Flash 模型。关于 Gemini API Key 的可用地区请见 https://ai.google.dev/gemini-api/docs/available-regions。
+一个基于 [Material Design 3](https://m3.material.io/) UI 风格的网页文本内容 AI 总结插件。目前仅支持 Chrome 浏览器（版本 >= 116）和 Google Gemini Flash 模型。关于 Gemini API Key 的可用地区请见 https://ai.google.dev/gemini-api/docs/available-regions 。
 
 ## 安装
 
@@ -18,7 +18,7 @@
 
 ## 用法
 
-1. 首先在插件设置页面填写您的 `Gemini API Key`（关于如何申请 Gemini API Key 请见 https://ai.google.dev/gemini-api/docs/api-key）
+1. 首先在插件设置页面填写您的 `Gemini API Key`（关于如何申请 Gemini API Key 请见 https://ai.google.dev/gemini-api/docs/api-key ）
 2. 然后您就可以通过以下三种方式触发对网页全文或者选中的网页内容的总结：
    - 点击浏览器右上角插件图标
    - `Ctrl+Shift+S`(Mac 用户是 `Cmd+Shift+S`)

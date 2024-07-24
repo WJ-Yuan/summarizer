@@ -6,7 +6,7 @@ EN / [简体中文](README_ZH_CN.md)
 
 ## Introduction
 
-It's a webpage text content AI summary extension based on [Material Design 3](https://m3.material.io/) UI style. Currently only supports Chrome browser (version >= 116) and Google Gemini Flash model. For the available regions of Gemini API Key, please see https://ai.google.dev/gemini-api/docs/available-regions.
+It's a webpage text content AI summary extension based on [Material Design 3](https://m3.material.io/) UI style. Currently only supports Chrome browser (version >= 116) and Google Gemini Flash model. For the available regions of Gemini API Key, please see https://ai.google.dev/gemini-api/docs/available-regions .
 
 ## Install
 
@@ -18,7 +18,7 @@ It's a webpage text content AI summary extension based on [Material Design 3](ht
 
 ## Usage
 
-1. First fill in your `Gemini API Key` on the plugin settings page (for how to apply for a Gemini API Key, please see https://ai.google.dev/gemini-api/docs/api-key)
+1. First fill in your `Gemini API Key` on the extension settings page (for how to apply for a Gemini API Key, please see https://ai.google.dev/gemini-api/docs/api-key)
 2. Then you can trigger the summary of the full text of the web page or the selected web page content in the following three ways:
    - Click the extension icon in the upper right corner of the browser
    - `Ctrl+Shift+S` (Mac users are `Cmd+Shift+S`)
