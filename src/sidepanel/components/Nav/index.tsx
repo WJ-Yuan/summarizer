@@ -26,7 +26,7 @@ const Nav = ({
 
   useEffect(() => {
     isSuspendVisible && setIsSettingVisible(false)
-  }, [isSettingVisible])
+  }, [isSuspendVisible])
 
   const openSetting = () => {
     browser.runtime.openOptionsPage()
