@@ -80,8 +80,8 @@ export const getContentScript = async (
     false,
     "",
     () => {
-      const md = window.__summary_markdown
-      window.__summary_markdown = ""
+      const md = window.__summarizer_markdown
+      window.__summarizer_markdown = ""
       return md
     }
   ]
@@ -101,10 +101,13 @@ export const getMarkdown = async (tab: Tab) => {
     })
   } else {
     await browser.scripting.executeScript({
+      files: [
+        "dist/contentScripts/inject.global.js",
+        "assets/third_party/sval.min.js"
+      ],
       target: {
         tabId
-      },
-      files: ["assets/third_party/sval.min.js"]
+      }
     })
   }
 

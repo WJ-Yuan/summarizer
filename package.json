@@ -1,7 +1,7 @@
 {
   "name": "summarizer",
   "displayName": "Summarizer",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "An AI Web Page Summarization Extension",
   "scripts": {
     "dev": "npm run clear && cross-env NODE_ENV=development run-p dev:*",
@@ -10,11 +10,13 @@
     "dev:background": "npm run build:background -- --mode development",
     "dev:web": "vite",
     "dev:js": "npm run build:js -- --mode development",
-    "build": "cross-env NODE_ENV=production run-s clear build:web build:prepare build:background build:js",
+    "dev:inject": "npm run build:inject -- --mode development",
+    "build": "cross-env NODE_ENV=production run-s clear build:web build:prepare build:background build:js build:inject",
     "build:prepare": "esno scripts/prepare.ts",
     "build:background": "vite build --config vite.config.background.ts",
     "build:web": "vite build",
     "build:js": "vite build --config vite.config.content.ts",
+    "build:inject": "vite build --config vite.config.inject.ts",
     "pack": "cross-env NODE_ENV=production run-p pack:*",
     "pack:zip": "rimraf extension.zip && jszip-cli add extension/* -o ./extension.zip",
     "pack:crx": "crx pack extension -o ./extension.crx",
@@ -103,5 +105,8 @@
     "Gemini",
     "Summary",
     "Web page"
-  ]
+  ],
+  "engines": {
+    "node": ">=18"
+  }
 }

@@ -3,12 +3,6 @@ import DOMPurify from "dompurify"
 import TurndownService from "turndown"
 import { gfm } from "turndown-plugin-gfm"
 
-declare global {
-  interface Window {
-    __summary_markdown: string
-  }
-}
-
 const getHTML = (): string => {
   let html: string
   const cloneNode = document.cloneNode(true) as Document
@@ -46,6 +40,6 @@ const getWebPageMarkdown = () => {
   return md
 }
 
-window.__summary_markdown =
+window.__summarizer_markdown =
   DOMPurify().sanitize(window.getSelection()?.toString() || "") ||
   getWebPageMarkdown()

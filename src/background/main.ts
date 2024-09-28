@@ -7,7 +7,6 @@ import { $t } from "~/shared/utils"
 if (import.meta.hot) {
   // @ts-expect-error for background HMR
   import("/@vite/client") // load latest content script
-  // import("./contentScriptHMR")
 }
 
 let isSpeakingTabSet: Set<number> = new Set()
