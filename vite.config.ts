@@ -64,9 +64,5 @@ export default defineConfig(({ command }) => ({
         sidepanel: r("src/sidepanel/index.html")
       }
     }
-  },
-  test: {
-    globals: true,
-    environment: "jsdom"
   }
 }))
