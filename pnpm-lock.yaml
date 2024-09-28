@@ -41,9 +41,6 @@ importers:
       dompurify:
         specifier: ^3.1.5
         version: 3.1.5
-      html-to-md:
-        specifier: ^0.8.5
-        version: 0.8.6
       lottie-react:
         specifier: ^2.4.0
         version: 2.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -68,6 +65,12 @@ importers:
       remark-gfm:
         specifier: ^4.0.0
         version: 4.0.0
+      turndown:
+        specifier: ^7.2.0
+        version: 7.2.0
+      turndown-plugin-gfm:
+        specifier: ^1.0.2
+        version: 1.0.2
       web-ext:
         specifier: ^7.6.2
         version: 7.12.0
@@ -105,6 +108,9 @@ importers:
       '@types/react-dom':
         specifier: ^18.2.4
         version: 18.3.0
+      '@types/turndown':
+        specifier: ^5.0.5
+        version: 5.0.5
       '@types/webextension-polyfill':
         specifier: ^0.10.0
         version: 0.10.7
@@ -600,6 +606,9 @@ packages:
   '@mdui/shared@1.0.5':
     resolution: {integrity: sha512-5ypE0/p5ijI0jG/ioXd38mXUjYnIU7hr7fMKLG7Zhugkw9A7rkhstLLDzvuH6tDOOsx8co5/lny1WFwSPagI4A==}
 
+  '@mixmark-io/domino@2.2.0':
+    resolution: {integrity: sha512-Y28PR25bHXUg88kCV7nivXrP2Nj2RueZ3/l/jdx6J9f8J4nsEGcgX0Qe6lt7Pa+J79+kPiJU3LguR6O/6zrLOw==}
+
   '@mozilla/readability@0.5.0':
     resolution: {integrity: sha512-Z+CZ3QaosfFaTqvhQsIktyGrjFjSC0Fa4EMph4mqKnWhmyoGICsV/8QK+8HpXut6zV7zwfWwqDmEjtk1Qf6EgQ==}
     engines: {node: '>=14.0.0'}
@@ -824,6 +833,9 @@ packages:
 
   '@types/trusted-types@2.0.7':
     resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
+
+  '@types/turndown@5.0.5':
+    resolution: {integrity: sha512-TL2IgGgc7B5j78rIccBtlYAnkuv8nUQqhQc+DSYV5j9Be9XOcm/SKOVRuA47xAVI3680Tk9B1d8flK2GWT2+4w==}
 
   '@types/unist@2.0.10':
     resolution: {integrity: sha512-IfYcSBWE3hLpBg8+X2SEa8LVkJdJEkT2Ese2aaLs3ptGdVtABxndrMaxuFlQ1qdFf9Q5rDvDpxI3WwgvKFAsQA==}
@@ -2210,9 +2222,6 @@ packages:
   html-encoding-sniffer@3.0.0:
     resolution: {integrity: sha512-oWv4T4yJ52iKrufjnyZPkrN0CH3QnrUqdB6In1g5Fe1mia8GmF36gnfNySxoZtxD5+NmYw1EElVXiBk93UeskA==}
     engines: {node: '>=12'}
-
-  html-to-md@0.8.6:
-    resolution: {integrity: sha512-KaRoYxML9AIETfgz5tgI1ioCsT8+skHTIILzrDV66XwCxuWUVjwCcpbnfeUwT9r8VBrfDAa8B5p5b5Pcs9LtRg==}
 
   html-url-attributes@3.0.0:
     resolution: {integrity: sha512-/sXbVCWayk6GDVg3ctOX6nxaVj7So40FcFAnWlWGNAB1LpYKcV5Cd10APjPjW80O7zYW2MsjBV4zZ7IZO5fVow==}
@@ -4053,6 +4062,12 @@ packages:
   tunnel-agent@0.6.0:
     resolution: {integrity: sha512-McnNiV1l8RYeY8tBgEpuodCC1mLUdbSN+CYBL7kJsJNInOP8UjDDEwdk6Mw60vdLLrr5NHKZhMAOSrR2NZuQ+w==}
 
+  turndown-plugin-gfm@1.0.2:
+    resolution: {integrity: sha512-vwz9tfvF7XN/jE0dGoBei3FXWuvll78ohzCZQuOb+ZjWrs3a0XhQVomJEb2Qh4VHTPNRO4GPZh0V7VRbiWwkRg==}
+
+  turndown@7.2.0:
+    resolution: {integrity: sha512-eCZGBN4nNNqM9Owkv9HAtWRYfLA4h909E/WGAWWBpmB275ehNhZyk87/Tpvjbp0jjNl9XwCsbe6bm6CqFsgD+A==}
+
   tweetnacl@0.14.5:
     resolution: {integrity: sha512-KXXFFdAbFXY4geFIwoyNK+f5Z1b7swfXABfL7HXCmoIWMKU3dmS26672A4EeQtDzLKy7SXmfBu51JolvEKwtGA==}
 
@@ -4931,6 +4946,8 @@ snapshots:
       ssr-window: 4.0.2
       tslib: 2.6.3
 
+  '@mixmark-io/domino@2.2.0': {}
+
   '@mozilla/readability@0.5.0': {}
 
   '@nodelib/fs.scandir@2.1.5':
@@ -5166,6 +5183,8 @@ snapshots:
   '@types/semver@7.5.8': {}
 
   '@types/trusted-types@2.0.7': {}
+
+  '@types/turndown@5.0.5': {}
 
   '@types/unist@2.0.10': {}
 
@@ -6870,8 +6889,6 @@ snapshots:
   html-encoding-sniffer@3.0.0:
     dependencies:
       whatwg-encoding: 2.0.0
-
-  html-to-md@0.8.6: {}
 
   html-url-attributes@3.0.0: {}
 
@@ -9059,6 +9076,12 @@ snapshots:
   tunnel-agent@0.6.0:
     dependencies:
       safe-buffer: 5.2.1
+
+  turndown-plugin-gfm@1.0.2: {}
+
+  turndown@7.2.0:
+    dependencies:
+      '@mixmark-io/domino': 2.2.0
 
   tweetnacl@0.14.5: {}
 
